@@ -1,15 +1,21 @@
-# Conceptual Repository
+# Gitbook Static Site
 > This intends to be an [readme-documented][-0], [open-source-licensed][-1], [semantic-versioned][-2],
 [conventional-committed][-3] and [changelogged][-4] git repository starting point
-for the development of a brand-new project
+for the publication of a gitbook static site
 
-A straightforward beginning for an open-source project repository
+A straightforward beginning for a [Honkit's Gitbook][-5] SSG repository
 
+Beside brings Gitbook file system structure and useful Makefile targets to help development process, it also provides deploy-on-push automation through github action.
+
+[**Check published book result example**][book]
+
+[book]: https://Generic-Tree.github.io/gitbook
 [-0]: https://www.makeareadme.com/ "Make a README"
 [-1]: https://choosealicense.com/licenses/ "Choose a License"
 [-2]: https://semver.org/ "Semantic Versioning"
 [-3]: https://www.conventionalcommits.org/en/v1.0.0/ "Conventional Commits"
 [-4]: https://keepachangelog.com/en/1.0.0/ "Keep a Changelog"
+[-5]: https://github.com/honkit/honkit "Honkit Repository"
 
 ### Table of Contents
 <details>
@@ -32,17 +38,36 @@ First of all, [![create a new repository][B1]][!1] from this template, \
 Name it accordingly and place where it best fits for your team.
 
 [B1]: https://img.shields.io/static/v1?label=create%20a%20new%20repository&message=%20&style=social "Create new repository"
-[!1]: https://github.com/generic-tree/root/generate "Github repository's template generation URL"
+[!1]: https://github.com/generic-tree/gitbook/generate "Github repository's template generation URL"
 
 ### Development environment
-Make sure you have `Git` installed:
-```bash
+Make sure you have `Git`, `Make` and `NPM` installed:
+```shell
 $ git --version
 git version 2.25.1
+$ make --version
+GNU Make 4.2.1
+$ npm --version
+7.11.1
 ```
 
 Thus, clone the recent-created repository locally,
-and you'll be ready to start developing your project.
+and set up its development environment:
+
+```shell
+$ make init
+```
+
+Finally, you are ready to [write your Gitbook first chapter][1]
+and proceed to publish it. \
+You would like to check if defined plugins fit all your needs, changing it in `book.json` and `package.json` accordingly
+
+[1]: https://honkit.netlify.app/structure.html "Honkit Documentation"
+
+### Continuos deployment
+[You need to enable Github Pages in repository setting][2]. For that, choose the root of repo's `gh-pages` branch and you are setup
+
+[2]: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
 ### Repo publication
 After all, you should make this project your own: \
@@ -63,6 +88,12 @@ This project shortens a repository start setup, considering:
     * [Conventional Commit][-3]
     * [Keep a Changelog][-4]
 
+It also powers up development workflow by:
+* Inclusion of proficient `Makefile` that improves development management
+* Inclusion of appropriate `.gitignore` file
+* Inclusion of `package.json` to dependencies setup
+* Pre-configured Github Pages publication workflow
+
 [>1]: https://github.com/RichardLitt/standard-readme/blob/master/spec.md "Standard readme specification"
 
 ### Folder structure
@@ -70,9 +101,13 @@ This project shortens a repository start setup, considering:
 .
 ├── .git/                       Version control system folder
 ├── .gitignore                  Ignored files manifest
+├── book.json                   Gitbook configuration file
 ├── CHANGELOG.md                Release notes description
 ├── LICENSE                     License file
-└── README.md                   Readme document
+├── Makefile                    Development management facilities
+├── package.json                Node dependency descriptor
+├── README.md                   Readme document
+└── SUMMARY.md                  Gitbook chapter summary
 ```
 
 

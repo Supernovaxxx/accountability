@@ -1,0 +1,14 @@
+{
+    "gitbook": ">=3.2.0",
+    "variables": {
+        "__title__": "Honkit's Gitbook Repo"
+    },
+        "plugins": [
+        "github@2.0.0"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/generic-tree/gitbook"
+        }
+    }
+}
