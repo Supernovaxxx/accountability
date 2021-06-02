@@ -1,9 +1,0 @@
-# This file specifies untracked files to be ignored in code versioning
-
-## Build
-_book/
-
-## Development
-node_modules/
-package-lock.json
-.env
