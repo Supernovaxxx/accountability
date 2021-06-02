@@ -1,0 +1,344 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Home · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.20">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Home</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="gitbook-static-site">Gitbook Static Site</h1>
+<blockquote>
+<p>This intends to be an <a href="https://www.makeareadme.com/" title="Make a README" target="_blank">readme-documented</a>, <a href="https://choosealicense.com/licenses/" title="Choose a License" target="_blank">open-source-licensed</a>, <a href="https://semver.org/" title="Semantic Versioning" target="_blank">semantic-versioned</a>,
+<a href="https://www.conventionalcommits.org/en/v1.0.0/" title="Conventional Commits" target="_blank">conventional-committed</a> and <a href="https://keepachangelog.com/en/1.0.0/" title="Keep a Changelog" target="_blank">changelogged</a> git repository starting point
+for the publication of a gitbook static site</p>
+</blockquote>
+<p>A straightforward beginning for a <a href="https://github.com/honkit/honkit" title="Honkit" target="_blank">Honkit&apos;s Gitbook</a> SSG repository</p>
+<p>Beside brings Gitbook file system structure and useful Makefile targets to help development process, it also provides deploy-on-push automation through github action.</p>
+<h3 id="table-of-contents">Table of Contents</h3>
+<details>
+  <summary>See all</summary>
+
+  * [Getting started](#getting-started)
+    * [Development environment](#development-environment)
+    * [Repo publication](#repo-publication)
+  * [Project specifications](#project-specifications)
+    * [Features](#features)
+    * [Folder structure](#folder-structure)
+  * [Maintenance](#maintenance-)
+  * [License](#license-)
+
+</details>
+
+
+<h2 id="getting-started">Getting started</h2>
+<p>First of all, <a href="https://github.com/generic-tree/gitbook/generate" title="Github repository&apos;s template generation URL" target="_blank"><img src="https://img.shields.io/static/v1?label=create%20a%20new%20repository&amp;message=%20&amp;style=social" alt="create a new repository" title="Create new repository"></a> from this template, \
+Name it accordingly and place where it best fits for your team.</p>
+<h3 id="development-environment">Development environment</h3>
+<p>Make sure you have <code>Git</code>, <code>Make</code> and <code>NPM</code> installed:</p>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> git --version</span>
+git version 2.25.1
+<span class="hljs-meta">$</span><span class="bash"> make --version</span>
+GNU Make 4.2.1
+<span class="hljs-meta">$</span><span class="bash"> npm --version</span>
+7.11.1
+</code></pre>
+<p>Thus, clone the recent-created repository locally,
+and set up its development environment:</p>
+<pre><code class="lang-shell"><span class="hljs-meta">$</span><span class="bash"> make init</span>
+</code></pre>
+<p>Finally, you are ready to <a href="https://honkit.netlify.app/structure.html" target="_blank">write your Gitbook first chapter</a>
+and proceed to publish it. \
+You would like to check if defined plugins fit all your needs, changing it in <code>book.json</code> and <code>package.json</code> accordingly</p>
+<h3 id="repo-publication">Repo publication</h3>
+<p>After all, you should make this project your own: \
+Write a good README to present your project to the world. \
+And also ensure to tailor the project license to your needs.</p>
+<h2 id="project-specifications">Project specifications</h2>
+<p>Here some descriptions about this template project:</p>
+<h3 id="features">Features</h3>
+<p>This project shortens a repository start setup, considering:</p>
+<ul>
+<li>Inclusion of mature README document, inspired by <a href="https://github.com/RichardLitt/standard-readme/blob/master/spec.md" title="Standard readme specification" target="_blank">Standard Readme</a></li>
+<li>Inclusion of open-source LICENSE file</li>
+<li>Inclusion of structured, yet raw, CHANGELOG file</li>
+<li>Compliance with widely-used version control conventions, such as:<ul>
+<li><a href="https://semver.org/" title="Semantic Versioning" target="_blank">Semantic Versioning</a></li>
+<li><a href="https://www.conventionalcommits.org/en/v1.0.0/" title="Conventional Commits" target="_blank">Conventional Commit</a></li>
+<li><a href="https://keepachangelog.com/en/1.0.0/" title="Keep a Changelog" target="_blank">Keep a Changelog</a></li>
+</ul>
+</li>
+</ul>
+<p>It also powers up development workflow by:</p>
+<ul>
+<li>Inclusion of proficient <code>Makefile</code> that improves development management</li>
+<li>Inclusion of appropriate <code>.gitignore</code> file</li>
+<li>Inclusion of <code>package.json</code> to dependencies setup</li>
+</ul>
+<h3 id="folder-structure">Folder structure</h3>
+<pre><code>.
+├── .git/                       Version control system folder
+├── .gitignore                  Ignored files manifest
+├── book.json                   Gitbook configuration file
+├── CHANGELOG.md                Release notes description
+├── LICENSE                     License file
+├── Makefile                    Development management facilities
+├── package.json                Node dependency descriptor
+├── README.md                   Readme document
+└── SUMMARY.md                  Gitbook chapter summary
+</code></pre><h2 id="maintenance-">Maintenance <a href="https://www.repostatus.org" title="Repo maintenance status" target="_blank"><img src="https://www.repostatus.org/badges/latest/active.svg" alt title="Repostatus active badge"></a></h2>
+<p>This project is maintained by the author, <a href="https://github.com/artu-hnrq" target="_blank">@artu-hnrq</a>. \
+It has reached a stable, usable state and is being <strong>actively developed</strong>.</p>
+<h2 id="license-">License <a href="https://choosealicense.com/licenses/gpl-3.0/" title="GPL 3.0 License description" target="_blank"><img src="https://img.shields.io/github/license/artu-hnrq/Django_GoogleAppEngine_Template?color=green" alt title="License badge"></a></h2>
+<p>This project is published under the permissions established by <a href="https://choosealicense.com/licenses/gpl-3.0/" title="GPL 3.0 License description" target="_blank">GNU General Public License v3.0</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Home","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":">=3.2.0","theme":"default","variables":{"__title__":"Honkit's Gitbook Repo"},"plugins":["github@2.0.0"],"pluginsConfig":{"github":{"url":"https://github.com/generic-tree/gitbook"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2021-06-02T00:44:56.178Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-06-02T00:45:08.647Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
