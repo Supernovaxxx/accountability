@@ -33,4 +33,4 @@ deploy:: build ## Deploy application
 	echo "To deploy this book push progress to appropriate branch at Github"
 
 .ONESHELL:
-.PHONY: help init execute run build compile test clean veryclean deploy
+.PHONY: help init execute run build test clean veryclean deploy

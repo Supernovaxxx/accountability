@@ -1,14 +1,25 @@
 {
-    "gitbook": ">=3.2.0",
-    "variables": {
-        "__title__": "Honkit's Gitbook Repo"
+    "root": "./book",
+    "structure": {
+        "readme": "HOME.md"
     },
-        "plugins": [
+
+    "title": "Gitbook static site at Github Pages",
+    "description": "This Gitbook was built through Github Actions automation from [this repository][github]",
+    "author": "Arthur Henrique",
+    "github": "https://github.com/artu-hnrq",
+
+    "variables": {
+
+    },
+
+    "plugins": [
         "github@2.0.0"
     ],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/generic-tree/gitbook"
         }
-    }
+    },
+    "gitbook": ">=3.2.0"
 }

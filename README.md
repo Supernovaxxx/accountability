@@ -3,7 +3,7 @@
 [conventional-committed][-3] and [changelogged][-4] git repository starting point
 for the publication of a gitbook static site
 
-A straightforward beginning for a [Honkit's Gitbook][-5] SSG repository
+A straightforward beginning for a [Honkit's Gitbook][>2] SSG repository
 
 Beside brings Gitbook file system structure and useful Makefile targets to help development process, it also provides deploy-on-push automation through github action.
 
@@ -15,7 +15,6 @@ Beside brings Gitbook file system structure and useful Makefile targets to help 
 [-2]: https://semver.org/ "Semantic Versioning"
 [-3]: https://www.conventionalcommits.org/en/v1.0.0/ "Conventional Commits"
 [-4]: https://keepachangelog.com/en/1.0.0/ "Keep a Changelog"
-[-5]: https://github.com/honkit/honkit "Honkit Repository"
 
 ### Table of Contents
 <details>
@@ -89,25 +88,29 @@ This project shortens a repository start setup, considering:
     * [Keep a Changelog][-4]
 
 It also powers up development workflow by:
+* Inclusion of a preset `book.json` configuration file
+* Usage of `package.json` to plugins dependencies setup
 * Inclusion of proficient `Makefile` that improves development management
 * Inclusion of appropriate `.gitignore` file
-* Inclusion of `package.json` to dependencies setup
 * Pre-configured Github Pages publication workflow
-
-[>1]: https://github.com/RichardLitt/standard-readme/blob/master/spec.md "Standard readme specification"
 
 ### Folder structure
 ```
 .
 ├── .git/                       Version control system folder
+├── .github                     Github repo's configuration directory
+│   └── workflows               Continuous integration settings
+│       └── deploy.yml          Deploy-on-push automation descriptor
 ├── .gitignore                  Ignored files manifest
+├── book/                       Gitbook source directory
+│   ├── HOME.md                 Site home page
+│   └── SUMMMARY.md             Site left menu link list
 ├── book.json                   Gitbook configuration file
 ├── CHANGELOG.md                Release notes description
 ├── LICENSE                     License file
 ├── Makefile                    Development management facilities
 ├── package.json                Node dependency descriptor
-├── README.md                   Readme document
-└── SUMMARY.md                  Gitbook chapter summary
+└── README.md                   Readme document
 ```
 
 
